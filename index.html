@@ -6,40 +6,54 @@
     <title>Pagina de inicio con la lista de tareas</title>
     <!--Libreria css de Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-<!--Libreria js de Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Importacion de style.css-->
+    <link rel="stylesheet" href="/styles.css">
+ </head>
+ <body>
+ <!--Libreria js de Bootstrap-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-<!--Lista de tareas Navbar-->
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+ <!--Lista de tareas Navbar-->
+ <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">El Futuro</a>
+          <a class="navbar-brand" href="/index.html" + id="Titulo-1">El Futuro</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/contact.html">contáctanos</a>
+                <a class="nav-link" href="/contact.html">contáctenos </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/about.html">Informacióm</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  contáctanos
+                  Redes
                 </a>
+                
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://www.instagram.com/tilin_insanoo/" target="_blank">instagram</a></li>
-                  <li><a class="dropdown-item" href="/about.html">Informacióm</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/cerebrodigital.ia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="/Imagenes/Logos-Redes/Logo-Instagram.webp" alt="" height="65" width="65" > <span></span>Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://www.facebook.com/groups/inteligenciaartificialhablahispana/" target="_blank"><img src="/Imagenes/Logos-Redes/Logo-Facebook.svg" alt="" height="65" width="65"> <span></span>facebook</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="https://wildwildweb.es/es/blog/las-15-mejores-cuentas-de-animales-en-instagram" target="_blank"><button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="..." class="rounded me-2" alt="...">
+                        <strong class="me-auto">Bootstrap</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        Hello, world! This is a toast message.
+                      </div>
+                    </div></button></a></li>
                 </ul>
               </li>
-             
             </ul>
+            
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
@@ -47,9 +61,9 @@
           </div>
         </div>
       </nav>
-</nav>
+ </nav>
 
-<!--Tabla dinamica navbar-->
+ <!--Tabla dinamica navbar-->
   <nav class="navbar" style="background-color: #e3f2fd;">
     <ul class="nav nav-tabs">
         <li class="nav-item">
@@ -65,12 +79,106 @@
   </nav>
 
    <!--Lineas azules-->
+   <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <p>Sumérgete en el fascinante mundo de la inteligencia artificial, los robots y las aplicaciones inteligentes con nosotros. En El Futuro, exploramos los avances más emocionantes y revolucionarios en el campo de la IA y cómo están transformando nuestro mundo.
 
-   <ul class="list-group">
-    <a href="/index.html"> <li class="list-group-item active" aria-current="true">An active item</li></a>
+      Nuestra página es un destino único para aquellos que desean estar al tanto de las últimas noticias, tendencias y desarrollos en la inteligencia artificial. Desde los últimos avances en robótica hasta aplicaciones prácticas de la IA en la vida cotidiana, cubrimos una amplia gama de temas para satisfacer la curiosidad de nuestros lectores.
+      
+      ¿Te preguntas cómo la inteligencia artificial está cambiando la medicina, la educación o la industria? ¿Quieres conocer las últimas investigaciones en el campo de los robots autónomos o la visión por computadora? ¿O tal vez estás interesado en descubrir cómo las aplicaciones inteligentes están mejorando la eficiencia en los negocios y la productividad personal? En Mentes Mecánicas, tenemos respuestas para todas estas preguntas y más.
+      
+      Nuestro equipo de expertos en inteligencia artificial y tecnología está comprometido a brindarte contenido de calidad que te mantenga informado y te inspire a pensar en el futuro de manera creativa. Ya seas un entusiasta de la tecnología, un profesional de la industria o simplemente alguien curioso por conocer lo último en IA, ¡te invitamos a unirte a nosotros en este emocionante viaje hacia el futuro de la inteligencia artificial!</p>
+    <ul class="nav nav-pills">
+
+      <hr>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Enlaces</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+  <!--Comienzo de linea acordeon Bootstrap -->
   
-   </ul>
- 
+    <h4 id="scrollspyHeading2"> <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div></h4>
+    <p>...</p>
+
+    <h4 id="scrollspyHeading3"> <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #4
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div></h4>
+    <p>...</p>
+
+    <h4 id="scrollspyHeading4"> <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div></h4>
+    <p>...</p>
+
+    <h4 id="scrollspyHeading5"> <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </h4>
+    <p>...</p>
+  </div>
+
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div> 
    
 
   
