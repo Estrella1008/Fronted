@@ -1,4 +1,32 @@
-#Titulo-1
-{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*{
+    font-family: 'Times New Roman', Times, serif;
 }
+h1.Titulo1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.TextoDeCarta{
+    display: flex;
+    justify-content: right;
+    justify-content: center;
+    
+   
+    
+}
+
+@font-face {
+    font-family:Amatic;
+    src: url(/Fuentes/AmaticSC-Bold.ttf);
+}
+
+strong.me-auto{
+    color: rgb(5, 163, 236);
+    font-family:Amatic;
+}
+p.Redeslogo{
+    color: rgb(15, 209, 57);
+    font-family:Amatic;
+
+}
+
+
+

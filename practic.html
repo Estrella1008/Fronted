@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de tabla HTML con carta de Bootstrap</title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilo personalizado para la celda que contiene la carta y el texto */
+    .card-cell {
+      border: none; /* Elimina los bordes de la celda */
+      padding: 0; /* Elimina el relleno de la celda */
+    }
+
+    .card {
+      width: 300px; /* Ajusta el ancho de la carta según sea necesario */
+    }
+
+    .card-body p {
+      margin-bottom: 0; /* Elimina el margen inferior del párrafo dentro de la carta */
+    }
+  </style>
+</head>
+<body>
+
+<h2>Ejemplo de tabla HTML con carta de Bootstrap</h2>
+
+<table class="table">
+  <tr>
+    <td class="card-cell">
+      <!-- Aquí se coloca la carta de Bootstrap -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Título de la carta</h5>
+          <p class="card-text">Contenido de la carta.</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <!-- Aquí se coloca el texto descriptivo -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
