@@ -41,7 +41,7 @@
                       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
                     <div class="toast-body">
-                     <img src="/Imagenes/Inteligencia-Artificial/Imagen para icono.avif" alt="" width="1200" height="50">
+                      <img src="/Imagenes/Inteligencia-Artificial/Imagen para icono.avif" alt="" width="200" height="50">
                     </div>
                   </div></p></button></li>
               </ul>
@@ -57,66 +57,99 @@
     </nav>
 </nav>
 
-<!--Acordeon Boostrap-->
-<div class="row">
-    <div class="col-4">
-      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-        <nav class="nav nav-pills flex-column">
-          <a class="nav-link" href="#item-1">Item 1</a>
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-          </nav>
-          <a class="nav-link" href="#item-2">Item 2</a>
-          <a class="nav-link" href="#item-3">Item 3</a>
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-          </nav>
-        </nav>
-      </nav>
-    </div>
-  
-    <div class="col-8">
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-        <div id="item-1">
-          <h4>Item 1</h4>
-          <p>...</p>
-        </div>
-        <div id="item-1-1">
-          <h5>Item 1-1</h5>
-          <p>...</p>
-        </div>
-        <div id="item-1-2">
-          <h5>Item 1-2</h5>
-          <p>...</p>
-        </div>
-        <div id="item-2">
-          <h4>Item 2</h4>
-          <p>...</p>
-        </div>
-        <div id="item-3">
-          <h4>Item 3</h4>
-          <p>...</p>
-        </div>
-        <div id="item-3-1">
-          <h5>Item 3-1</h5>
-          <p>...</p>
-        </div>
-        <div id="item-3-2">
-          <h5>Item 3-2</h5>
-          <p>...</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <button type="button" class="btn btn-primary position-relative">
-     <a href="https://www.instagram.com/"><img src="/Imagenes/Inteligencia-Artificial/InteligenciaArtificial-1.webp" alt="" height="100" width="100"  ></a>
-    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-      <span class="visually-hidden">New alerts</span>
-    </span>
-  </button>
+  
+  <!-- Manejador de Tareas OpenIa-->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manejador de Tareas</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #taskList {
+        list-style-type: none;
+        padding: 0;
+    }
+    .task {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<h1>Manejador de Tareas</h1>
+<input type="text" id="taskInput" placeholder="Nombre de la tarea">
+<input type="date" id="dateInput">
+<button onclick="addTask()">Agregar Tarea</button>
+<ul id="taskList"></ul>
+
+<script>
+    function addTask() {
+        var taskInput = document.getElementById("taskInput");
+        var dateInput = document.getElementById("dateInput");
+
+        var taskName = taskInput.value.trim();
+        var taskDate = dateInput.value;
+
+        if (taskName === "") {
+            alert("Por favor ingresa el nombre de la tarea.");
+            return;
+        }
+
+        var task = {
+            name: taskName,
+            date: taskDate
+        };
+
+        saveTask(task);
+        displayTasks();
+        taskInput.value = "";
+        dateInput.value = "";
+    }
+
+    function saveTask(task) {
+        var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        tasks.push(task);
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }
+
+    function deleteTask(index) {
+        var tasks = JSON.parse(localStorage.getItem("tasks"));
+        tasks.splice(index, 1);
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        displayTasks();
+    }
+
+    function completeTask(index) {
+        // You can add your completion logic here if needed
+        alert("Tarea completada!");
+    }
+
+    function displayTasks() {
+        var taskList = document.getElementById("taskList");
+        taskList.innerHTML = "";
+
+        var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+        tasks.forEach(function(task, index) {
+            var li = document.createElement("li");
+            li.className = "task";
+            li.innerHTML = "<strong>" + task.name + "</strong> - " + task.date +
+                ' <button onclick="completeTask(' + index + ')">Completar</button>' +
+                ' <button onclick="deleteTask(' + index + ')">Eliminar</button>';
+            taskList.appendChild(li);
+        });
+    }
+
+    // Display existing tasks on page load
+    displayTasks();
+</script>
+</body>
+</html>
 
 
     
