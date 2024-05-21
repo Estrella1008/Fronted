@@ -16,6 +16,9 @@ p.TextoDeCarta{
 @font-face {
     font-family:Amatic;
     src: url(/Fuentes/AmaticSC-Bold.ttf);
+
+    font-family:Jersey ;
+    src: url(/Fuentes/Jersey25-Regular.ttf);
 }
 
 strong.me-auto{
@@ -25,6 +28,13 @@ strong.me-auto{
 p.Redeslogo{
     color: rgb(15, 209, 57);
     font-family:Amatic;
+}
+
+
+h2.tituloMargen{
+
+    color: azure;
+    font-family:Jersey;
 
 }
 
