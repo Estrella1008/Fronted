@@ -19,7 +19,17 @@ p.TextoDeCarta{
 
     font-family:Jersey ;
     src: url(/Fuentes/Jersey25-Regular.ttf);
+
+    font-family:Amatic-bold ;
+    src: url(/Fuentes/AmaticSC-Bold.ttf);
+
 }
+
+h6.pieDeFoto{
+   font-family:Amatic-bold;
+    color: rgb(5, 16, 170);
+}
+
 
 strong.me-auto{
     color: rgb(5, 163, 236);
@@ -38,17 +48,48 @@ h2.tituloMargen{
 
 }
 #elViaje{
-    color: blue;
+    color: rgb(0, 225, 255);
 }
 #scrollspyHeading1{
     color: blue;
+    font-family: 'Courier New', Courier, monospace;
 }
 #tituloPionero{
-    color: aqua;
+    color: rgb(0, 17, 255);
+    font-family: 'Courier New', Courier, monospace;
 }
-#pionerosIa{
-    color: rgb(48, 34, 250);
+#scrollspyHeading2{
+    color: blue;
+    font-family:'Courier New', Courier, monospace
 }
+#laExplocion{
+    color: blue;
+    font-family:'Courier New', Courier, monospace 
+}
+#scrollspyHeading4{
+    color: blue;
+    font-family:'Courier New', Courier, monospace  
+}
+#vision{
+color: darkred;
+font-family:Amatic-bold;
+}
+#Adaptación{
+color: darkred;
+font-family:Amatic-bold;
+}
+#Robots{
+color: darkred;
+font-family:Amatic-bold;
+}
+#Interacción{
+color: darkred;
+font-family:Amatic-bold;
+}
+body{
+    background-color: #4EA6E3 ;
+}
+    
 
 
 
